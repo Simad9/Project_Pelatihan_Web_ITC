@@ -4,11 +4,15 @@
   font-family: sans-serif;
 }
 
+body {
+  min-height: 200vh;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 5px black dashed;
+  border-bottom: 1px rgba(255, 255, 255, 0.3) dashed;
   background: linear-gradient(135deg, rgba(1, 57, 123, 0.92) 0%, #002755 100%);
 }
 nav .logo {
@@ -35,7 +39,8 @@ nav ul li a {
 header {
   display: flex;
   justify-content: space-around;
-  background: linear-gradient(135deg, rgba(1, 57, 123, 0.92) 0%, #002755 100%);
+  background-image: url(img/bg.svg);
+  background-size: cover;
 }
 header .text {
   padding: 100px 50px;
@@ -62,7 +67,29 @@ header .text .btn-view {
   text-align: center;
   line-height: 44px;
   margin: auto;
+  cursor: pointer;
 }
 header .profile-picture {
   padding-right: 136px;
+}
+
+.tentang-diri {
+  display: flex;
+}
+.tentang-diri img {
+  padding: 52px 61px 0 100px;
+  width: 514px;
+  height: 693px;
+}
+.tentang-diri .about {
+  padding-top: 122px;
+}
+.tentang-diri .about .deskripsi h3 {
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+.tentang-diri .about .deskripsi p {
+  text-indent: 65px;
+  font-size: 22px;
+  padding-bottom: 56px;
 }/*# sourceMappingURL=style.css.map */
