@@ -1,0 +1,68 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 5px black dashed;
+  background: linear-gradient(135deg, rgba(1, 57, 123, 0.92) 0%, #002755 100%);
+}
+nav .logo {
+  padding: 20px;
+  margin-left: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+nav ul {
+  display: flex;
+  padding-right: 50px;
+}
+nav ul li {
+  list-style: none;
+  padding: 20px;
+  font-size: 24px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  background: linear-gradient(135deg, rgba(1, 57, 123, 0.92) 0%, #002755 100%);
+}
+header .text {
+  padding: 100px 50px;
+  color: white;
+  width: 454px;
+}
+header .text .hi {
+  font-size: 28px;
+  margin-bottom: 9px;
+}
+header .text h3 {
+  font-size: 53px;
+  margin-bottom: 15px;
+}
+header .text .diri {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+header .text .btn-view {
+  width: 108px;
+  height: 44px;
+  border-radius: 5px;
+  background-color: #e39d22;
+  text-align: center;
+  line-height: 44px;
+  margin: auto;
+}
+header .profile-picture {
+  padding-right: 136px;
+}/*# sourceMappingURL=style.css.map */
