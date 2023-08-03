@@ -89,7 +89,46 @@ header .profile-picture {
   padding-bottom: 10px;
 }
 .tentang-diri .about .deskripsi p {
+  width: 575px;
   text-indent: 65px;
   font-size: 22px;
+  text-align: justify;
   padding-bottom: 56px;
+}
+.tentang-diri .about .card-skill ul {
+  width: 574px;
+  display: flex;
+  row-gap: 8px;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  flex-wrap: wrap;
+}
+.tentang-diri .about .card-skill ul li {
+  width: 279px;
+  height: 79px;
+  border-radius: 10px;
+  border: 3px solid #01397b;
+  background: #fff;
+  padding-top: 3px;
+  display: flex;
+  align-items: center;
+}
+.tentang-diri .about .card-skill img {
+  width: 72px;
+  height: 63px;
+  padding: 0;
+  padding-left: 10px;
+}
+.tentang-diri .about .card-skill .desk_skill {
+  padding-left: 20px;
+}
+
+footer {
+  margin-top: 100px;
+  height: 150px;
+  background-color: #303030;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  line-height: 150px;
 }/*# sourceMappingURL=style.css.map */
