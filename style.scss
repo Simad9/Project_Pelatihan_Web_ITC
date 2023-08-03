@@ -4,8 +4,21 @@
   font-family: sans-serif;
 }
 
+// Sementara
 body {
   min-height: 200vh;
+}
+
+// Global dipake
+.btn-view {
+  width: 108px;
+  height: 44px;
+  border-radius: 5px;
+  background-color: #e39d22;
+  text-align: center;
+  line-height: 44px;
+  margin: auto;
+  cursor: pointer;
 }
 
 nav {
@@ -16,14 +29,15 @@ nav {
   background: linear-gradient(135deg, rgba(1, 57, 123, 0.92) 0%, #002755 100%);
   .logo {
     padding: 20px;
-    margin-left: 20px;
+    margin-left: 86px;
     text-align: center;
     font-weight: bold;
     color: white;
+    cursor: pointer;
   }
   ul {
     display: flex;
-    padding-right: 50px;
+    padding-right: 87px;
     li {
       list-style: none;
       padding: 20px;
@@ -57,17 +71,6 @@ header {
       font-size: 22px;
       margin-bottom: 20px;
     }
-
-    .btn-view {
-      width: 108px;
-      height: 44px;
-      border-radius: 5px;
-      background-color: #e39d22;
-      text-align: center;
-      line-height: 44px;
-      margin: auto;
-      cursor: pointer;
-    }
   }
   .profile-picture {
     padding-right: 136px;
@@ -76,13 +79,20 @@ header {
 
 .tentang-diri {
   display: flex;
+  justify-content: center;
+  padding: 53px 61px 53px 61px;
+  background-color: #E6F4F1;
   img {
-    padding: 52px 61px 0 100px;
-    width: 514px;
-    height: 693px;
+    // width: 514px;
+    // height: 693px;
+    box-shadow: 0px 4.528800010681152px 3.623039960861206px 0px
+        rgba(0, 0, 0, 0.02),
+      0px 12.521552085876465px 10.017241477966309px 0px rgba(0, 0, 0, 0.04),
+      0px 30.14707374572754px 24.117658615112305px 0px rgba(0, 0, 0, 0.05),
+      0px 100px 80px 0px rgba(0, 0, 0, 0.07);
   }
   .about {
-    padding-top: 122px;
+    padding: 69px 61px 0px 61px;
     .deskripsi {
       h3 {
         font-size: 30px;
@@ -104,7 +114,7 @@ header {
         column-gap: 8px;
         flex-wrap: wrap;
         li {
-          width: 279px;
+          width: 275px;
           height: 79px;
           border-radius: 10px;
           border: 3px solid #01397b;
@@ -126,6 +136,8 @@ header {
     }
   }
 }
+
+
 
 footer {
   margin-top: 100px;

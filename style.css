@@ -8,6 +8,17 @@ body {
   min-height: 200vh;
 }
 
+.btn-view {
+  width: 108px;
+  height: 44px;
+  border-radius: 5px;
+  background-color: #e39d22;
+  text-align: center;
+  line-height: 44px;
+  margin: auto;
+  cursor: pointer;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -17,14 +28,15 @@ nav {
 }
 nav .logo {
   padding: 20px;
-  margin-left: 20px;
+  margin-left: 86px;
   text-align: center;
   font-weight: bold;
   color: white;
+  cursor: pointer;
 }
 nav ul {
   display: flex;
-  padding-right: 50px;
+  padding-right: 87px;
 }
 nav ul li {
   list-style: none;
@@ -59,30 +71,21 @@ header .text .diri {
   font-size: 22px;
   margin-bottom: 20px;
 }
-header .text .btn-view {
-  width: 108px;
-  height: 44px;
-  border-radius: 5px;
-  background-color: #e39d22;
-  text-align: center;
-  line-height: 44px;
-  margin: auto;
-  cursor: pointer;
-}
 header .profile-picture {
   padding-right: 136px;
 }
 
 .tentang-diri {
   display: flex;
+  justify-content: center;
+  padding: 53px 61px 53px 61px;
+  background-color: #E6F4F1;
 }
 .tentang-diri img {
-  padding: 52px 61px 0 100px;
-  width: 514px;
-  height: 693px;
+  box-shadow: 0px 4.5288000107px 3.6230399609px 0px rgba(0, 0, 0, 0.02), 0px 12.5215520859px 10.017241478px 0px rgba(0, 0, 0, 0.04), 0px 30.1470737457px 24.1176586151px 0px rgba(0, 0, 0, 0.05), 0px 100px 80px 0px rgba(0, 0, 0, 0.07);
 }
 .tentang-diri .about {
-  padding-top: 122px;
+  padding: 69px 61px 0px 61px;
 }
 .tentang-diri .about .deskripsi h3 {
   font-size: 30px;
@@ -104,7 +107,7 @@ header .profile-picture {
   flex-wrap: wrap;
 }
 .tentang-diri .about .card-skill ul li {
-  width: 279px;
+  width: 275px;
   height: 79px;
   border-radius: 10px;
   border: 3px solid #01397b;
