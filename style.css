@@ -59,10 +59,17 @@ nav ul li {
   list-style: none;
   padding: 20px;
   font-size: 24px;
+  text-align: center;
 }
 nav ul li a {
   text-decoration: none;
   color: white;
+}
+nav ul li:hover {
+  background-color: #01397b;
+}
+nav img {
+  display: none;
 }
 
 header {
@@ -139,6 +146,7 @@ header .profile-picture {
   height: 63px;
   padding: 0;
   padding-left: 10px;
+  background-size: cover;
 }
 .tentang-diri .about .card-skill .desk_skill {
   padding-left: 20px;
@@ -305,11 +313,26 @@ footer {
   nav .logo {
     margin: auto;
   }
+  nav img {
+    display: inline-block;
+    padding: 10px;
+    background-color: rgba(1, 57, 123, 0.7);
+    cursor: pointer;
+  }
   nav ul {
-    display: none;
+    width: 100%;
     display: flex;
     flex-direction: column;
     padding: 0;
+  }
+  nav .list {
+    display: none;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   header .text .hi {
     text-align: center;
@@ -330,13 +353,8 @@ footer {
   .tentang-diri img {
     width: 80%;
   }
-  .tentang-diri .about .deskripsi p {
-    width: 370px;
-    font-size: 15px;
-    padding-left: 100px;
-  }
   .tentang-diri .card-skill ul {
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
@@ -359,5 +377,32 @@ footer {
   }
   .hub-saya .container .hub-kanan .sosial-media ul {
     justify-content: center;
+  }
+}
+@media screen and (max-width: 425px) {
+  html {
+    width: 100vh !important;
+  }
+  .tentang-diri {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .tentang-diri .about {
+    margin: 0 10px;
+  }
+  .tentang-diri .about .deskripsi p {
+    margin: 0 auto;
+    width: 400px;
+    font-size: 15px;
+    text-align: justify;
+  }
+  .tentang-diri .card-skill ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }/*# sourceMappingURL=style.css.map */

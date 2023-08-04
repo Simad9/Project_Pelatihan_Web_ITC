@@ -64,11 +64,18 @@ nav {
       list-style: none;
       padding: 20px;
       font-size: 24px;
+      text-align: center;
       a {
         text-decoration: none;
         color: white;
       }
     }
+    li:hover {
+      background-color: #01397b;
+    }
+  }
+  img {
+    display: none;
   }
 }
 
@@ -152,6 +159,7 @@ header {
         height: 63px;
         padding: 0;
         padding-left: 10px;
+        background-size: cover;
       }
       .desk_skill {
         padding-left: 20px;
@@ -316,25 +324,41 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+  // html{
+  //   width: 100vh;
+  // }
   nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     .logo {
       margin: auto;
     }
+    img {
+      margin-top: -10px;
+      display: inline-block;
+      padding: 10px;
+      background-color: rgba($color: #01397b, $alpha: 010.017241477966309px);
+      cursor: pointer;
+    }
     ul {
-      display: none;
+      width: 100%;
       display: flex;
-      // togle nanti
       flex-direction: column;
       padding: 0;
+    }
+    .list {
+      display: none;
     }
   }
 
   header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     .text {
-      // margin-left: -60px;
       .hi {
         text-align: center;
       }
@@ -357,19 +381,10 @@ footer {
     img {
       width: 80%;
     }
-    .about {
-      .deskripsi {
-        p {
-          width: 370px;
-          font-size: 15px;
-          padding-left: 100px;
-        }
-      }
-    }
 
     .card-skill {
       ul {
-        flex-direction: column;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
       }
@@ -398,6 +413,39 @@ footer {
             justify-content: center;
           }
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  html {
+    width: 100vh !important;
+  }
+
+  .tentang-diri {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .about {
+      margin: 0 10px;
+      .deskripsi {
+        p {
+          margin: 0 auto;
+          width: 400px;
+          font-size: 15px;
+          text-align: justify;
+        }
+      }
+    }
+    .card-skill {
+      ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
       }
     }
   }
