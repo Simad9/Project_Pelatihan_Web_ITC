@@ -12,13 +12,14 @@
   text-align: center;
   line-height: 44px;
   margin: auto;
+}
+.btn-view a {
   color: white;
-  cursor: pointer;
+  text-decoration: none;
 }
 
 .btn-view:hover {
   background-color: #e4a944;
-  color: rgb(247, 246, 211);
 }
 
 h2 {
@@ -99,6 +100,7 @@ header .profile-picture {
 }
 .tentang-diri img {
   box-shadow: 0px 4.5288000107px 3.6230399609px 0px rgba(0, 0, 0, 0.02), 0px 12.5215520859px 10.017241478px 0px rgba(0, 0, 0, 0.04), 0px 30.1470737457px 24.1176586151px 0px rgba(0, 0, 0, 0.05), 0px 100px 80px 0px rgba(0, 0, 0, 0.07);
+  background-size: cover;
 }
 .tentang-diri .about {
   padding: 69px 61px 0px 61px;
@@ -255,6 +257,9 @@ header .profile-picture {
   border: none;
   cursor: pointer;
 }
+.hub-saya .container .hub-kiri #submit:hover {
+  background-color: #616967;
+}
 .hub-saya .container .hub-kanan {
   padding-left: 63px;
 }
@@ -286,7 +291,7 @@ footer {
   height: 150px;
   background-color: #303030;
   color: #fff;
-  font-size: 24px;
+  font-size: 12px;
   text-align: center;
   line-height: 150px;
 }
@@ -306,9 +311,6 @@ footer {
     flex-direction: column;
     padding: 0;
   }
-  header .text {
-    margin-left: -60px;
-  }
   header .text .hi {
     text-align: center;
   }
@@ -319,7 +321,6 @@ footer {
     display: none;
   }
   .tentang-diri {
-    margin-left: -60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -327,10 +328,17 @@ footer {
     text-align: center;
   }
   .tentang-diri img {
-    padding: 10px 0;
+    width: 80%;
   }
-  .tentang-diri .about {
-    padding: 53px 0;
+  .tentang-diri .about .deskripsi p {
+    width: 370px;
+    font-size: 15px;
+    padding-left: 100px;
+  }
+  .tentang-diri .card-skill ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .project {
     height: 1200px;
@@ -351,8 +359,5 @@ footer {
   }
   .hub-saya .container .hub-kanan .sosial-media ul {
     justify-content: center;
-  }
-  footer {
-    font-size: 12px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -8,6 +8,9 @@
 // body {
 //   min-height: 200vh;
 // }
+// html {
+//   width: 100vh;
+// }
 
 // Global dipake
 .btn-view {
@@ -18,12 +21,13 @@
   text-align: center;
   line-height: 44px;
   margin: auto;
-  color: white;
-  cursor: pointer;
+  a {
+    color: white;
+    text-decoration: none;
+  }
 }
 .btn-view:hover {
   background-color: #e4a944;
-  color: rgb(247, 246, 211);
 }
 h2 {
   text-align: center;
@@ -108,6 +112,7 @@ header {
       0px 12.521552085876465px 10.017241477966309px 0px rgba(0, 0, 0, 0.04),
       0px 30.14707374572754px 24.117658615112305px 0px rgba(0, 0, 0, 0.05),
       0px 100px 80px 0px rgba(0, 0, 0, 0.07);
+    background-size: cover;
   }
   .about {
     padding: 69px 61px 0px 61px;
@@ -266,6 +271,9 @@ header {
         border: none;
         cursor: pointer;
       }
+      #submit:hover {
+        background-color: #616967;
+      }
     }
     .hub-kanan {
       padding-left: 63px;
@@ -302,7 +310,7 @@ footer {
   height: 150px;
   background-color: #303030;
   color: #fff;
-  font-size: 24px;
+  font-size: 12px;
   text-align: center;
   line-height: 150px;
 }
@@ -326,7 +334,7 @@ footer {
 
   header {
     .text {
-      margin-left: -60px;
+      // margin-left: -60px;
       .hi {
         text-align: center;
       }
@@ -340,17 +348,31 @@ footer {
   }
 
   .tentang-diri {
-    margin-left: -60px;
+    // margin-left: -60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     img {
-      padding: 10px 0;
+      width: 80%;
     }
     .about {
-      padding: 53px 0;
+      .deskripsi {
+        p {
+          width: 370px;
+          font-size: 15px;
+          padding-left: 100px;
+        }
+      }
+    }
+
+    .card-skill {
+      ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
     }
   }
 
@@ -378,9 +400,5 @@ footer {
         }
       }
     }
-  }
-
-  footer {
-    font-size: 12px;
   }
 }
