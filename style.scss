@@ -258,6 +258,7 @@ header {
         border-radius: 3px;
         background-color: transparent;
         text-indent: 15px;
+        font-size: 20px;
       }
       input[type="email"] {
         width: 100%;
@@ -269,6 +270,7 @@ header {
         border-radius: 3px;
         background-color: transparent;
         text-indent: 15px;
+        font-size: 20px;
       }
       input[type="submit"] {
         background-color: #393d3c;
@@ -314,7 +316,6 @@ header {
 }
 
 footer {
-  margin-top: 100px;
   height: 150px;
   background-color: #303030;
   color: #fff;
@@ -323,15 +324,13 @@ footer {
   line-height: 150px;
 }
 
+// Max-width 768px = TABLET
 @media screen and (max-width: 768px) {
-  // html{
-  //   width: 100vh;
-  // }
   nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    padding: 0px;
     .logo {
       margin: auto;
     }
@@ -339,7 +338,7 @@ footer {
       margin-top: -10px;
       display: inline-block;
       padding: 10px;
-      background-color: rgba($color: #01397b, $alpha: 010.017241477966309px);
+      // background-color: rgba($color: #01397b, $alpha: 010.017241477966309px);
       cursor: pointer;
     }
     ul {
@@ -354,6 +353,7 @@ footer {
   }
 
   header {
+    height: 450px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -381,7 +381,6 @@ footer {
     img {
       width: 80%;
     }
-
     .card-skill {
       ul {
         flex-wrap: wrap;
@@ -399,9 +398,14 @@ footer {
   }
 
   .hub-saya {
+    .garis-judul{
+      margin-bottom: 35px;
+    }
     .container {
       flex-direction: column;
       align-items: center;
+      margin: 0;
+      padding-bottom: 35px;
       .hub-kiri {
         margin-bottom: 50px;
       }
@@ -418,35 +422,134 @@ footer {
   }
 }
 
+// Max-width 425px = PHONE
 @media screen and (max-width: 425px) {
   html {
-    width: 100vh !important;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .btn-view {
+    width: 80px;
+    height: 38px;
+    line-height: 38px;
+    font-size: 12px;
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+  h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 8px;
+  }
+  .garis-judul {
+    width: 180px;
+    height: 5px;
+    background-color: #000;
+    margin: auto;
+    border-radius: 10px;
+  }
+
+  nav {
+    ul {
+      padding-bottom: 10px;
+      li {
+        list-style: none;
+        padding: 10px;
+        font-size: 24px;
+        text-align: center;
+        a {
+          text-decoration: none;
+          color: white;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  header {
+    height: 280px;
+    .text {
+      width: 100%;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .hi {
+        font-size: 13px;
+        margin-bottom: 9px;
+      }
+      h3 {
+        font-size: 38px;
+        margin-bottom: 15px;
+      }
+      .diri {
+        font-size: 15px;
+      }
+    }
   }
 
   .tentang-diri {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     .about {
-      margin: 0 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 35px;
+      width: 100%;
+      img {
+        width: 20% !important;
+      }
       .deskripsi {
         p {
+          text-indent: 30px;
           margin: 0 auto;
-          width: 400px;
-          font-size: 15px;
+          width: 100%;
+          font-size: 17px;
           text-align: justify;
+          padding-bottom: 35px;
         }
       }
     }
     .card-skill {
       ul {
+        width: 100% !important;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
       }
     }
+  }
+
+  .hub-saya {
+    .garis-judul {
+      margin-bottom: 35px;
+    }
+    .container {
+      .hub-kiri {
+        font-size: 15px;
+        input[type="text"] {
+          font-size: 13px;
+        }
+        input[type="email"] {
+          font-size: 13px;
+        }
+        input[type="submit"] {
+          width: 70px;
+          height: 30px;
+          border-radius: 15px;
+          border: none;
+        }
+      }
+    }
+  }
+  footer {
+    height: 80px;
+    line-height: 80px;
   }
 }

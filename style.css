@@ -244,6 +244,7 @@ header .profile-picture {
   border-radius: 3px;
   background-color: transparent;
   text-indent: 15px;
+  font-size: 20px;
 }
 .hub-saya .container .hub-kiri input[type=email] {
   width: 100%;
@@ -255,6 +256,7 @@ header .profile-picture {
   border-radius: 3px;
   background-color: transparent;
   text-indent: 15px;
+  font-size: 20px;
 }
 .hub-saya .container .hub-kiri input[type=submit] {
   background-color: #393d3c;
@@ -295,7 +297,6 @@ header .profile-picture {
 }
 
 footer {
-  margin-top: 100px;
   height: 150px;
   background-color: #303030;
   color: #fff;
@@ -309,14 +310,15 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 0px;
   }
   nav .logo {
     margin: auto;
   }
   nav img {
+    margin-top: -10px;
     display: inline-block;
     padding: 10px;
-    background-color: rgba(1, 57, 123, 0.7);
     cursor: pointer;
   }
   nav ul {
@@ -329,6 +331,7 @@ footer {
     display: none;
   }
   header {
+    height: 450px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -364,9 +367,14 @@ footer {
   .project .list-project {
     flex-direction: column;
   }
+  .hub-saya .garis-judul {
+    margin-bottom: 35px;
+  }
   .hub-saya .container {
     flex-direction: column;
     align-items: center;
+    margin: 0;
+    padding-bottom: 35px;
   }
   .hub-saya .container .hub-kiri {
     margin-bottom: 50px;
@@ -381,28 +389,113 @@ footer {
 }
 @media screen and (max-width: 425px) {
   html {
-    width: 100vh !important;
+    width: 100%;
+    overflow-x: hidden;
   }
-  .tentang-diri {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .btn-view {
+    width: 80px;
+    height: 38px;
+    line-height: 38px;
+    font-size: 12px;
+  }
+  .btn-view a {
+    color: white;
+    text-decoration: none;
+  }
+  h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 8px;
+  }
+  .garis-judul {
+    width: 180px;
+    height: 5px;
+    background-color: #000;
+    margin: auto;
+    border-radius: 10px;
+  }
+  nav ul {
+    padding-bottom: 10px;
+  }
+  nav ul li {
+    list-style: none;
+    padding: 10px;
+    font-size: 24px;
     text-align: center;
   }
-  .tentang-diri .about {
-    margin: 0 10px;
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
   }
-  .tentang-diri .about .deskripsi p {
-    margin: 0 auto;
-    width: 400px;
-    font-size: 15px;
-    text-align: justify;
+  header {
+    height: 280px;
   }
-  .tentang-diri .card-skill ul {
+  header .text {
+    width: 100%;
+    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  header .text .hi {
+    font-size: 13px;
+    margin-bottom: 9px;
+  }
+  header .text h3 {
+    font-size: 38px;
+    margin-bottom: 15px;
+  }
+  header .text .diri {
+    font-size: 15px;
+  }
+  .tentang-diri .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 35px;
+    width: 100%;
+  }
+  .tentang-diri .about img {
+    width: 20% !important;
+  }
+  .tentang-diri .about .deskripsi p {
+    text-indent: 30px;
+    margin: 0 auto;
+    width: 100%;
+    font-size: 17px;
+    text-align: justify;
+    padding-bottom: 35px;
+  }
+  .tentang-diri .card-skill ul {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hub-saya .garis-judul {
+    margin-bottom: 35px;
+  }
+  .hub-saya .container .hub-kiri {
+    font-size: 15px;
+  }
+  .hub-saya .container .hub-kiri input[type=text] {
+    font-size: 13px;
+  }
+  .hub-saya .container .hub-kiri input[type=email] {
+    font-size: 13px;
+  }
+  .hub-saya .container .hub-kiri input[type=submit] {
+    width: 70px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+  }
+  footer {
+    height: 80px;
+    line-height: 80px;
   }
 }/*# sourceMappingURL=style.css.map */
