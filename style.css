@@ -4,10 +4,6 @@
   font-family: sans-serif;
 }
 
-body {
-  min-height: 200vh;
-}
-
 .btn-view {
   width: 108px;
   height: 44px;
@@ -18,6 +14,20 @@ body {
   margin: auto;
   color: white;
   cursor: pointer;
+}
+
+h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 8px;
+}
+
+.garis-judul {
+  width: 281px;
+  height: 5px;
+  background-color: #000;
+  margin: auto;
+  border-radius: 10px;
 }
 
 nav {
@@ -80,7 +90,7 @@ header .profile-picture {
   display: flex;
   justify-content: center;
   padding: 53px 61px 53px 61px;
-  background-color: #E6F4F1;
+  background-color: #e6f4f1;
 }
 .tentang-diri img {
   box-shadow: 0px 4.5288000107px 3.6230399609px 0px rgba(0, 0, 0, 0.02), 0px 12.5215520859px 10.017241478px 0px rgba(0, 0, 0, 0.04), 0px 30.1470737457px 24.1176586151px 0px rgba(0, 0, 0, 0.05), 0px 100px 80px 0px rgba(0, 0, 0, 0.07);
@@ -128,25 +138,75 @@ header .profile-picture {
 }
 
 .project {
+  padding-top: 57px;
   height: 580px;
-  background-color: #01397B;
+  background-color: #01397b;
+}
+.project h2 {
+  color: white;
+}
+.project .garis-judul {
+  background-color: white;
+  margin-bottom: 66px;
+}
+.project ul {
+  margin: auto;
+  width: 394px;
+  height: 257px;
+  background-color: #e6f4f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.project ul li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project ul li .judul-project {
+  width: 304px;
+  height: 58;
+  border-radius: 10;
+  background-color: #e6f4f1;
+  border: 3px solid #002755;
+}
+.project .list-project {
+  display: flex;
+  justify-content: space-around;
+}
+.project .list-project .jenis-project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 45px;
+}
+.project .list-project .jenis-project .gambar {
+  width: 394px;
+  height: 257px;
+  background-color: #e6f4f1;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project .list-project .jenis-project .judul-project {
+  width: 304px;
+  height: 58px;
+  background-color: #e6f4f1;
+  border-radius: 10px;
+  border: 3px solid #002755;
+  text-align: center;
+  line-height: 58px;
+  margin-top: -35px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .hub-saya {
   padding-top: 50px;
-  background-color: #E6F4F1;
-}
-.hub-saya h2 {
-  text-align: center;
-  font-size: 40px;
-  margin-bottom: 8px;
-}
-.hub-saya .garis-judul {
-  width: 281px;
-  height: 5px;
-  background-color: #000;
-  margin: auto;
-  border-radius: 10px;
+  background-color: #e6f4f1;
 }
 .hub-saya .container {
   display: flex;
@@ -182,8 +242,8 @@ header .profile-picture {
   text-indent: 15px;
 }
 .hub-saya .container .hub-kiri input[type=submit] {
-  background-color: #393D3C;
-  color: #E6F4F1;
+  background-color: #393d3c;
+  color: #e6f4f1;
   width: 100px;
   height: 40px;
   border-radius: 25px;
@@ -207,7 +267,7 @@ header .profile-picture {
 }
 .hub-saya .container .hub-kanan .alamat {
   margin-bottom: 45px;
-  width: 210px;
+  width: 250px;
 }
 .hub-saya .container .hub-kanan .sosial-media ul {
   list-style: none;

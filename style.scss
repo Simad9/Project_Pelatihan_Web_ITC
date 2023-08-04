@@ -5,9 +5,9 @@
 }
 
 // Sementara
-body {
-  min-height: 200vh;
-}
+// body {
+//   min-height: 200vh;
+// }
 
 // Global dipake
 .btn-view {
@@ -21,7 +21,20 @@ body {
   color: white;
   cursor: pointer;
 }
+h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 8px;
+}
+.garis-judul {
+  width: 281px;
+  height: 5px;
+  background-color: #000;
+  margin: auto;
+  border-radius: 10px;
+}
 
+// Styling CSS
 nav {
   display: flex;
   justify-content: space-between;
@@ -82,7 +95,7 @@ header {
   display: flex;
   justify-content: center;
   padding: 53px 61px 53px 61px;
-  background-color: #E6F4F1;
+  background-color: #e6f4f1;
   img {
     // width: 514px;
     // height: 693px;
@@ -138,36 +151,87 @@ header {
   }
 }
 
-.project{
+.project {
+  padding-top: 57px;
   height: 580px;
-  background-color: #01397B;
+  background-color: #01397b;
+  h2 {
+    color: white;
+  }
+  .garis-judul {
+    background-color: white;
+    margin-bottom: 66px;
+  }
+  ul {
+    margin: auto;
+    width: 394px;
+    height: 257px;
+    background-color: #e6f4f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    li {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .judul-project {
+        width: 304px;
+        height: 58;
+        border-radius: 10;
+        background-color: #e6f4f1;
+        border: 3px solid #002755;
+      }
+    }
+  }
+  .list-project {
+    display: flex;
+    justify-content: space-around;
+    .jenis-project {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 45px;
+      .gambar {
+        width: 394px;
+        height: 257px;
+        background-color: #e6f4f1;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .judul-project {
+        width: 304px;
+        height: 58px;
+        background-color: #e6f4f1;
+        border-radius: 10px;
+        border: 3px solid #002755;
+        text-align: center;
+        line-height: 58px;
+        margin-top: -35px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+  }
 }
 
-.hub-saya{
+.hub-saya {
   padding-top: 50px;
-  background-color: #E6F4F1;
-  h2{
-    text-align: center;
-    font-size: 40px;
-    margin-bottom: 8px;
-  }
-  .garis-judul{
-    width: 281px;
-    height: 5px;
-    background-color: #000;
-    margin: auto;
-    border-radius: 10px;
-  }
-  .container{
+  background-color: #e6f4f1;
+
+  .container {
     display: flex;
     justify-content: center;
     margin: 40px 40px;
-    .hub-kiri{
+    .hub-kiri {
       width: 293px;
       padding: 0 20px;
       font-size: 22px;
       font-weight: bold;
-      input[type=text]{
+      input[type="text"] {
         width: 288px;
         padding: 10px 0;
         margin-bottom: 15px;
@@ -178,7 +242,7 @@ header {
         background-color: transparent;
         text-indent: 15px;
       }
-      input[type=email]{
+      input[type="email"] {
         width: 100%;
         padding: 10px 0;
         margin-bottom: 15px;
@@ -189,9 +253,9 @@ header {
         background-color: transparent;
         text-indent: 15px;
       }
-      input[type=submit]{
-        background-color: #393D3C;
-        color: #E6F4F1;
+      input[type="submit"] {
+        background-color: #393d3c;
+        color: #e6f4f1;
         width: 100px;
         height: 40px;
         border-radius: 25px;
@@ -199,27 +263,27 @@ header {
         cursor: pointer;
       }
     }
-    .hub-kanan{
+    .hub-kanan {
       padding-left: 63px;
-      h3{
+      h3 {
         font-size: 22px;
       }
-      p{
+      p {
         font-size: 18px;
       }
-      a{
+      a {
         list-style: none;
       }
 
-      .contact{
+      .contact {
         margin-bottom: 45px;
       }
-      .alamat{
+      .alamat {
         margin-bottom: 45px;
-        width: 210px;
+        width: 250px;
       }
-      .sosial-media{
-        ul{
+      .sosial-media {
+        ul {
           list-style: none;
           display: flex;
           column-gap: 29px;
@@ -227,7 +291,6 @@ header {
       }
     }
   }
-
 }
 
 footer {
