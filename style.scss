@@ -21,6 +21,10 @@
   color: white;
   cursor: pointer;
 }
+.btn-view:hover{
+  background-color: #e4a944;
+  color: rgb(247, 246, 211);
+}
 h2 {
   text-align: center;
   font-size: 40px;
@@ -302,3 +306,54 @@ footer {
   text-align: center;
   line-height: 150px;
 }
+
+@media screen and (max-width: 768px){
+  nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .logo{
+      margin: auto;
+    }
+    ul{
+      display: none;
+      display: flex;
+      // togle nanti
+      flex-direction: column;
+      padding: 0;
+    }
+  }
+
+  header{
+    .text{
+      margin-left: -60px;
+      .hi{
+        text-align: center;
+      }
+      h3{
+        text-align: center;
+      }
+    }
+    .profile-picture{
+      display: none;
+    }
+  }
+
+  .tentang-diri{
+    margin-left: -60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    img{
+      padding: 10px 0;
+    }
+    .about{
+      padding: 53px 0;
+    }
+
+  }
+
+}
+
