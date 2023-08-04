@@ -332,4 +332,27 @@ footer {
   .tentang-diri .about {
     padding: 53px 0;
   }
+  .project {
+    height: 1200px;
+  }
+  .project .list-project {
+    flex-direction: column;
+  }
+  .hub-saya .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hub-saya .container .hub-kiri {
+    margin-bottom: 50px;
+  }
+  .hub-saya .container .hub-kanan {
+    padding: 0;
+    text-align: center;
+  }
+  .hub-saya .container .hub-kanan .sosial-media ul {
+    justify-content: center;
+  }
+  footer {
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=style.css.map */

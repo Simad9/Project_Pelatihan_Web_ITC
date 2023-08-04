@@ -21,7 +21,7 @@
   color: white;
   cursor: pointer;
 }
-.btn-view:hover{
+.btn-view:hover {
   background-color: #e4a944;
   color: rgb(247, 246, 211);
 }
@@ -307,15 +307,15 @@ footer {
   line-height: 150px;
 }
 
-@media screen and (max-width: 768px){
-  nav{
+@media screen and (max-width: 768px) {
+  nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    .logo{
+    .logo {
       margin: auto;
     }
-    ul{
+    ul {
       display: none;
       display: flex;
       // togle nanti
@@ -324,36 +324,63 @@ footer {
     }
   }
 
-  header{
-    .text{
+  header {
+    .text {
       margin-left: -60px;
-      .hi{
+      .hi {
         text-align: center;
       }
-      h3{
+      h3 {
         text-align: center;
       }
     }
-    .profile-picture{
+    .profile-picture {
       display: none;
     }
   }
 
-  .tentang-diri{
+  .tentang-diri {
     margin-left: -60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    img{
+    img {
       padding: 10px 0;
     }
-    .about{
+    .about {
       padding: 53px 0;
     }
-
   }
 
-}
+  .project {
+    height: 1200px;
+    .list-project {
+      flex-direction: column;
+    }
+  }
 
+  .hub-saya {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      .hub-kiri {
+        margin-bottom: 50px;
+      }
+      .hub-kanan {
+        padding: 0;
+        text-align: center;
+        .sosial-media {
+          ul {
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    font-size: 12px;
+  }
+}
