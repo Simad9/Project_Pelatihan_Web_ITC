@@ -4,4 +4,5 @@ Hi semua, di repo ini aku buat website pertamaku sendiri. Tujuan dari bikin webs
 
 Dan design yang telah aku buat lama akhirnya bisa ku buat juga, design bisa klik di sini : [Design](https://www.figma.com/file/9AB3bCVaRpi39ggB7U4gmh/My-Website?type=design&node-id=239%3A525&mode=design&t=vbbIsSR4vRsUtDsr-1)
 
+Akses website ini, [klik disini](https://simad9.github.io/portfolio)
 
